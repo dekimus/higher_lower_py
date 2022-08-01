@@ -2,7 +2,7 @@ import random
 from game_data import data
 from art import logo
 from art import vs
-from replit import clear
+#from replit import clear
 score = 0
 onGame = True
 print(logo)
@@ -40,11 +40,11 @@ while onGame:
   print(data[vsus[1]]['follower_count'])
   if checkAnswer(answer ,data[vsus[0]]['follower_count'], data[vsus[1]]['follower_count']):
     score += 1
-    clear()
+    #clear()
     print(f"You are right, current score: {score}")
     print(logo)
   else:
-    clear()
+    #clear()
     print(logo)
     print(f"Sorry, that's wrong. Final score: {score}")
     onGame = False
